@@ -1,19 +1,19 @@
-import java.util.Date;
+import java.time.LocalDateTime;
 
-public final class ImutableClass {
+public final class ImmutableClass {
     private final int id;
-    private final  Date date;
+    private final  LocalDateTime date;
 
-    public ImutableClass(int id, Date date){
+    public ImmutableClass(int id, LocalDateTime date){
         this.id = id;
-        this.date = new Date(date.getTime());
+        this.date = date;
     }
 
     public int getId() {
         return id;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date ;
     }
 
